@@ -1,4 +1,5 @@
 ﻿using InheritanceDemo_180924._190924;
+using InheritanceDemo_180924.InheritanceEXampleSolution;
 using System.Runtime.InteropServices.ObjectiveC;
 
 namespace InheritanceDemo_180924
@@ -54,9 +55,16 @@ namespace InheritanceDemo_180924
             //objA.y = 222;
             //objA.methodA();
 
-            ClassA objA = new ClassB();
-            objA.methodX();
-            
+            //ClassA objA = new ClassB();
+            //objA.methodX();
+
+            Truck tr = new Truck("TATA", 123, 100, 500, 10, 15);
+            tr.display();
+            Console.WriteLine("-------------");
+            int dis = 200;
+          int fn=  tr.fuelNeeded(dis);
+            Console.WriteLine($" Fuel needed for {dis}KM is {fn} Litre");
+            tr.distanceCovered(5);
         }
     }
 }
