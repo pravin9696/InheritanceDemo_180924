@@ -1,5 +1,6 @@
 ﻿using InheritanceDemo_180924._190924;
 using InheritanceDemo_180924.InheritanceEXampleSolution;
+using InheritanceDemo_180924.Multiple_inheritance_Demo;
 using System.Runtime.InteropServices.ObjectiveC;
 
 namespace InheritanceDemo_180924
@@ -37,6 +38,7 @@ namespace InheritanceDemo_180924
             return flag;
         }
     }
+   
     internal class Program
     {
         static void Main(string[] args)
@@ -58,13 +60,18 @@ namespace InheritanceDemo_180924
             //ClassA objA = new ClassB();
             //objA.methodX();
 
-            Truck tr = new Truck("TATA", 123, 100, 500, 10, 15);
-            tr.display();
-            Console.WriteLine("-------------");
-            int dis = 200;
-          int fn=  tr.fuelNeeded(dis);
-            Console.WriteLine($" Fuel needed for {dis}KM is {fn} Litre");
-            tr.distanceCovered(5);
+            //  Truck tr = new Truck("TATA", 123, 100, 500, 10, 15);
+            //  tr.display();
+            //  Console.WriteLine("-------------");
+            //  int dis = 200;
+            //int fn=  tr.fuelNeeded(dis);
+            //  Console.WriteLine($" Fuel needed for {dis}KM is {fn} Litre");
+            //  tr.distanceCovered(5);
+
+            I_MyInterface Inter1 = new Child1();
+            
+            Child1 c1 = new Child1();
+            //c1.show();
         }
     }
 }
